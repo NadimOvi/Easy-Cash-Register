@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/myProfile"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemHistory"
+        android:title="@string/itemHistory"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/signOut"
+        android:title="@string/signOut"
+        app:showAsAction="never" />
+
+
+
+</menu>

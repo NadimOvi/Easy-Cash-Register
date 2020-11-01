@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/colorWhite"
+    tools:context=".ProfileActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/welcome"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/grey_80"
+            android:textStyle="bold" />
+
+        <!--    <TextView
+                android:id="@+id/mobileNumber"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Number"
+                android:layout_marginBottom="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_60" />-->
+        <TextView
+            android:id="@+id/classifytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:text="@string/click_below_to_select_a_image"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/imageVIew"
+            android:layout_width="280dp"
+            android:layout_height="300dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/captureimage"
+            android:layout_centerHorizontal="true"
+            >
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp">
+            <Button
+                android:id="@+id/classify"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="@string/identify"
+                android:textSize="16dp"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_rounded_red"
+                android:textColor="@android:color/white" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <com.libizo.CustomEditText
+                    android:id="@+id/itemName"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="35dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    app:libIZO_setPrefixTextColor="#FF4081"
+                    app:libIZO_clearIconTint="#8f1f15"
+                    app:libIZO_setBorderColor="#8f1f15"
+                    app:libIZO_setBorderView="true"
+                    app:libIZO_setCornerRadius="4dp"
+                    app:libIZO_setStrokeWidth="2dp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quantity"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/itemQuantity"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:layout_marginLeft="5dp"
+                    app:libIZO_setPrefixTextColor="#FF4081"
+                    app:libIZO_clearIconTint="#8f1f15"
+                    app:libIZO_setBorderColor="#8f1f15"
+                    app:libIZO_setBorderView="true"
+                    app:libIZO_setCornerRadius="4dp"
+                    app:libIZO_setStrokeWidth="2dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_amount"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/itemPrice"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:layout_marginLeft="25dp"
+                    app:libIZO_setPrefixTextColor="#FF4081"
+                    app:libIZO_clearIconTint="#8f1f15"
+                    app:libIZO_setBorderColor="#8f1f15"
+                    app:libIZO_setBorderView="true"
+                    app:libIZO_setCornerRadius="4dp"
+                    app:libIZO_setStrokeWidth="2dp"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="@string/save"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_rounded_red"
+                android:textColor="@android:color/white"
+                android:layout_margin="10dp"
+                />
+
+            //AddShow
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+                <com.google.android.gms.ads.AdView
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-6949704799119881/2209175499">
+                </com.google.android.gms.ads.AdView>
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+
+</ScrollView>
+
+
+</LinearLayout>
+
+
